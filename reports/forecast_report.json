@@ -1,0 +1,8 @@
+{
+    "model": "Facebook Prophet",
+    "metrics": {
+        "MAE": 6144.045962407255,
+        "RMSE": 7654.7000852118
+    },
+    "forecast_period": 12
+}

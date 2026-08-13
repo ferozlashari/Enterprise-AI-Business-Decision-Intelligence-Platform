@@ -1,0 +1,63 @@
+Inventory Intelligence Rules
+
+
+Inventory management focuses on maintaining optimal stock levels.
+
+
+Important Factors:
+
+Demand Forecast:
+
+Predict future product requirements.
+
+
+Safety Stock:
+
+Additional inventory maintained to avoid shortage.
+
+
+Reorder Point:
+
+Inventory level where new stock should be ordered.
+
+
+Lead Time:
+
+Time required from supplier order to inventory arrival.
+
+
+Economic Order Quantity:
+
+Optimal order quantity to minimize inventory cost.
+
+
+
+Inventory Risks:
+
+
+Stockout Risk:
+
+Occurs when available inventory is insufficient for customer demand.
+
+
+Overstock Risk:
+
+Occurs when inventory exceeds customer requirements.
+
+
+
+Recommended Actions:
+
+
+For shortage:
+
+- Increase inventory level
+- Improve demand forecasting
+- Adjust reorder point
+
+
+For excess inventory:
+
+- Reduce purchasing
+- Run promotions
+- Optimize supply planning

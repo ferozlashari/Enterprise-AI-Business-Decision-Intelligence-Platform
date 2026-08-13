@@ -1,0 +1,45 @@
+AI Model Usage Guide
+
+
+Sales Prediction:
+
+Question Examples:
+
+"What will be next month sales?"
+
+"Which products generate highest revenue?"
+
+"Why sales decreased?"
+
+
+
+Inventory Prediction:
+
+
+Questions:
+
+"Which products need reorder?"
+
+"Which warehouse has inventory risk?"
+
+
+
+Customer AI:
+
+
+Questions:
+
+"Who are our valuable customers?"
+
+"Which customers need marketing attention?"
+
+
+
+Forecasting:
+
+
+Questions:
+
+"What is future demand?"
+
+"Which products will grow?"

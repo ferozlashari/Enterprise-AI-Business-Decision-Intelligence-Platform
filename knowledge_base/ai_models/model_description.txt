@@ -1,0 +1,116 @@
+Enterprise AI Model Description
+
+
+The Enterprise AI Business Decision Intelligence Platform uses machine learning models to support business decision making.
+
+Available AI models:
+
+1. Sales Prediction Model
+
+Purpose:
+Predict future sales based on historical transaction data.
+
+Algorithm:
+Random Forest Regressor
+XGBoost Regressor
+LightGBM Regressor
+
+Input Features:
+
+- Product Category
+- Customer Segment
+- Region
+- Sales History
+- Discount
+- Quantity
+- Profit
+- Date Information
+
+
+Output:
+
+Predicted Sales Amount
+
+
+Business Usage:
+
+The model helps managers forecast revenue and identify sales opportunities.
+
+
+
+2. Inventory Prediction Model
+
+
+Purpose:
+
+Predict inventory demand and optimize stock levels.
+
+
+Algorithms:
+
+Random Forest
+XGBoost
+LightGBM
+
+
+Output:
+
+- Future Demand
+- Safety Stock
+- Reorder Point
+- Inventory Risk
+
+
+Business Usage:
+
+Helps warehouses avoid:
+
+- Overstocking
+- Stock shortages
+- Supply chain problems
+
+
+
+3. Customer Segmentation Model
+
+
+Purpose:
+
+Group customers based on purchasing behavior.
+
+
+Algorithm:
+
+K-Means Clustering
+
+
+Customer Groups:
+
+- High Value Customers
+- Regular Customers
+- Low Engagement Customers
+
+
+Business Usage:
+
+Used for marketing strategy and customer retention.
+
+
+
+4. Demand Forecasting Model
+
+
+Purpose:
+
+Predict future product demand.
+
+
+Techniques:
+
+Time Series Forecasting
+
+
+Output:
+
+Future demand trends.
+

@@ -1,0 +1,29 @@
+Enterprise Decision Policies
+
+
+When sales decrease:
+
+The AI system should analyze:
+
+- Sales trend
+- Product performance
+- Customer behavior
+- Market changes
+
+
+When inventory shortage occurs:
+
+The AI should recommend:
+
+- Increasing stock level
+- Adjusting reorder point
+- Improving demand forecasting
+
+
+When customer churn risk increases:
+
+The AI should recommend:
+
+- Customer engagement campaigns
+- Personalized offers
+- Retention strategies

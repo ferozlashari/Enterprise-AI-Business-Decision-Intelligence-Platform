@@ -1,0 +1,149 @@
+# =========================================================
+# Enterprise AI Business Decision Intelligence Platform
+# Docker Compose — full stack (backend + frontend + data layer)
+#
+# Quick start:
+#   cp .env.example .env      # fill in real secrets/API keys
+#   docker compose up --build
+#
+# Frontend : http://localhost:3000
+# Backend  : http://localhost:8000  (docs at /docs)
+# =========================================================
+
+services:
+
+  # ---------------------------------------------------------
+  # PostgreSQL — primary relational database
+  # ---------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: enterprise_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-enterprise_ai}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ---------------------------------------------------------
+  # Redis — cache + Celery broker/result backend
+  # ---------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: enterprise_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ---------------------------------------------------------
+  # Backend — FastAPI application
+  # ---------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: enterprise_backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override host-based defaults with the in-network
+      # service names so the container can actually reach them
+      # (values in .env still apply to anything not listed here).
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-postgres}@postgres:5432/${DB_NAME:-enterprise_ai}
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      DB_HOST: postgres
+      REDIS_HOST: redis
+      FRONTEND_URL: http://localhost:3000
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./datasets:/app/datasets
+      - ./knowledge_base:/app/knowledge_base
+      - ./outputs:/app/outputs
+      - ./saved_models:/app/saved_models
+      - ./vector_db:/app/vector_db
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+      - ./data:/app/data
+      - ./figures:/app/figures
+
+  # ---------------------------------------------------------
+  # Celery worker — background jobs (sales prediction reruns,
+  # report generation, RAG re-indexing — see backend/tasks/)
+  # ---------------------------------------------------------
+  celery_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: enterprise_celery_worker
+    restart: unless-stopped
+    command: celery -A backend.celery_app worker --loglevel=info
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-postgres}@postgres:5432/${DB_NAME:-enterprise_ai}
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      DB_HOST: postgres
+      REDIS_HOST: redis
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./datasets:/app/datasets
+      - ./knowledge_base:/app/knowledge_base
+      - ./outputs:/app/outputs
+      - ./saved_models:/app/saved_models
+      - ./vector_db:/app/vector_db
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+      - ./data:/app/data
+      - ./figures:/app/figures
+
+  # ---------------------------------------------------------
+  # Frontend — React/Vite build served by nginx
+  # ---------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Browser-facing URL — the browser (not the container)
+        # calls this directly, so it must be host-reachable.
+        VITE_API_URL: http://localhost:8000
+    container_name: enterprise_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  redis_data:

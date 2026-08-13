@@ -1,0 +1,51 @@
+Machine Learning Evaluation Metrics
+
+
+Regression Metrics:
+
+
+MAE:
+
+Average prediction error.
+
+
+RMSE:
+
+Measures prediction accuracy with higher penalty for large errors.
+
+
+R2 Score:
+
+Shows model explanation capability.
+
+
+
+Classification Metrics:
+
+
+Accuracy:
+
+Correct prediction percentage.
+
+
+Precision:
+
+Correct positive predictions.
+
+
+Recall:
+
+Ability to detect positive cases.
+
+
+
+Business Metrics:
+
+
+Revenue Growth
+
+Inventory Efficiency
+
+Customer Retention
+
+Operational Cost Reduction

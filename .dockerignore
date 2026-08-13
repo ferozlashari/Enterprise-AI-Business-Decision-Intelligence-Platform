@@ -1,0 +1,41 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Frontend (has its own build context/.dockerignore)
+frontend/node_modules
+frontend/dist
+
+# Data — mounted as volumes at runtime, not baked into the image
+datasets/
+knowledge_base/
+outputs/
+saved_models/
+vector_db/
+logs/
+reports/
+data/
+figures/
+
+# Env / secrets — never bake these into an image layer
+.env
+.env.*
+!.env.example
+
+# Editor / OS cruft
+.vscode/
+.idea/
+.DS_Store
+
+# Docs
+README.md
+*.md

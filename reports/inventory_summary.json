@@ -1,0 +1,12 @@
+{
+    "Inventory": 37727.407916154974,
+    "Demand": 37872.27619047619,
+    "Products": 9994,
+    "inventory_data": [
+        {
+            "product": "Inventory",
+            "quantity": 37727.407916154974,
+            "demand": 37872.27619047619
+        }
+    ]
+}

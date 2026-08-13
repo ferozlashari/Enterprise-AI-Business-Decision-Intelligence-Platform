@@ -1,0 +1,43 @@
+AI Copilot Frequently Asked Questions
+
+
+Question:
+What is AI Copilot?
+
+
+Answer:
+AI Copilot is an enterprise assistant that combines business data, machine learning models and knowledge documents to answer executive questions.
+
+
+
+Question:
+How does AI Copilot work?
+
+
+Answer:
+It retrieves relevant business knowledge using FAISS, analyzes business data using AI agents and generates responses using Groq LLM.
+
+
+
+Question:
+What technologies are used?
+
+
+Answer:
+
+- FastAPI
+- Machine Learning
+- LangGraph
+- FAISS
+- RAG
+- Groq LLM
+
+
+
+Question:
+Can AI Copilot predict future sales?
+
+
+Answer:
+
+Yes. The platform uses forecasting and prediction models for future business analysis.

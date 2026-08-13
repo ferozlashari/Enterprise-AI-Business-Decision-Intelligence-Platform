@@ -1,0 +1,54 @@
+Sales Intelligence Rules
+
+
+Sales analysis evaluates business performance using:
+
+- Historical sales
+- Product performance
+- Customer behavior
+- Market conditions
+- Seasonal trends
+
+
+Sales KPIs:
+
+
+Revenue:
+
+Total income generated from product sales.
+
+
+Sales Growth:
+
+Percentage increase or decrease compared with previous period.
+
+
+Average Order Value:
+
+Average amount spent by customers per transaction.
+
+
+Sales Decline Analysis:
+
+
+When sales decrease, analyze:
+
+1. Customer demand reduction
+
+2. Product availability issues
+
+3. Pricing changes
+
+4. Competitor activities
+
+5. Seasonal effects
+
+6. Marketing performance
+
+
+Recommended Actions:
+
+- Improve marketing campaigns
+- Optimize pricing
+- Increase product availability
+- Analyze customer requirements

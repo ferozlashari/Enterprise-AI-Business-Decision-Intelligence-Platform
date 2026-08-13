@@ -1,0 +1,74 @@
+AI Prediction Explanation Guide
+
+
+Sales Prediction:
+
+
+The sales prediction model analyzes historical sales patterns.
+
+Important factors:
+
+1. Product demand
+2. Customer behavior
+3. Seasonal trends
+4. Discount impact
+5. Regional performance
+
+
+Example:
+
+If sales decrease in a region, the AI checks:
+
+- Customer activity
+- Product availability
+- Previous sales trend
+- Pricing changes
+
+
+
+Inventory Prediction:
+
+
+Inventory AI analyzes:
+
+- Current stock
+- Historical demand
+- Product movement
+- Lead time
+
+
+The system calculates:
+
+Safety Stock:
+
+Extra inventory required to prevent shortage.
+
+
+Reorder Point:
+
+The inventory level where new stock should be ordered.
+
+
+
+Customer Segmentation:
+
+
+Customers are grouped according to:
+
+- Purchase frequency
+- Spending amount
+- Product preference
+
+
+This helps business teams create targeted campaigns.
+
+
+
+Demand Forecasting:
+
+
+The model identifies:
+
+- Seasonal demand
+- Growth patterns
+- Future requirements

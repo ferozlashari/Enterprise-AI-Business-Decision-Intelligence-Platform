@@ -1,0 +1,54 @@
+AI Model Performance Report
+
+
+Sales Prediction Model:
+
+
+Evaluation Metrics:
+
+MAE:
+Measures average prediction error.
+
+
+RMSE:
+Measures prediction accuracy.
+
+
+R2 Score:
+Measures model explanation capability.
+
+
+
+Inventory Prediction Model:
+
+
+Evaluation:
+
+Demand prediction accuracy
+
+Stock optimization performance
+
+
+Customer Segmentation:
+
+
+Evaluation:
+
+Cluster quality
+
+Customer grouping effectiveness
+
+
+
+Demand Forecasting:
+
+
+Evaluation:
+
+Forecast accuracy
+
+Trend prediction performance
+
+
+
+All models are monitored continuously.

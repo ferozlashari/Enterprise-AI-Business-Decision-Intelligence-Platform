@@ -1,0 +1,25 @@
+Common Enterprise AI Questions
+
+
+Question:
+Why did sales decrease?
+
+
+Answer:
+Sales decrease can happen because of lower customer demand, product performance issues, market changes or operational problems.
+
+
+Question:
+How can inventory shortage be prevented?
+
+
+Answer:
+Inventory shortage can be prevented using demand forecasting, safety stock calculation and optimized reorder points.
+
+
+Question:
+What is AI Copilot?
+
+
+Answer:
+AI Copilot is an intelligent assistant that combines enterprise data, machine learning predictions and business knowledge to answer executive questions.

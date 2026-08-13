@@ -1,0 +1,57 @@
+Enterprise Decision Policies
+
+
+AI recommendations must include:
+
+
+Current Situation:
+
+Explain the detected business condition.
+
+
+Business Risk:
+
+Identify possible negative impact.
+
+
+Recommended Action:
+
+Provide practical solution.
+
+
+Expected Impact:
+
+Explain possible business improvement.
+
+
+
+Decision Examples:
+
+
+Sales Decrease:
+
+Risk:
+Revenue reduction.
+
+Action:
+Analyze customer demand and improve product strategy.
+
+
+
+Inventory Shortage:
+
+Risk:
+Lost sales opportunities.
+
+Action:
+Increase stock and optimize reorder point.
+
+
+
+Customer Churn:
+
+Risk:
+Revenue loss.
+
+Action:
+Launch customer retention strategy.

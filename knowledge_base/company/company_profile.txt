@@ -1,0 +1,51 @@
+Enterprise AI Business Decision Intelligence Platform
+
+Company Overview:
+
+This enterprise platform provides artificial intelligence based business intelligence solutions for retail organizations.
+
+The platform analyzes business data from multiple systems including sales, inventory, customer management, finance and operational systems.
+
+The objective is to improve business decisions through predictive analytics, AI recommendations and automated intelligence.
+
+
+Business Areas:
+
+1. Sales Management
+2. Inventory Management
+3. Customer Analytics
+4. Demand Forecasting
+5. Executive Decision Support
+
+
+AI Capabilities:
+
+- Sales Prediction
+- Demand Forecasting
+- Inventory Optimization
+- Customer Segmentation
+- Business Risk Analysis
+- AI Executive Copilot
+
+
+Technology Platform:
+
+Machine Learning:
+- Random Forest
+- XGBoost
+- LightGBM
+- Prophet
+
+
+Artificial Intelligence:
+- Retrieval Augmented Generation
+- Large Language Models
+- Multi-Agent AI System
+- LangGraph Workflow
+
+
+Knowledge Management:
+
+Enterprise documents are stored in a vector database using FAISS.
+
+The AI Copilot retrieves relevant business knowledge and generates executive recommendations.

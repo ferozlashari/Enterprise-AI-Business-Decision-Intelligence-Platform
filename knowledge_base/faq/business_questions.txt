@@ -1,0 +1,36 @@
+Common Business Questions
+
+
+Question:
+Why did sales decrease?
+
+
+Answer:
+Sales decrease can happen because of reduced customer demand, product issues, pricing changes, competition or seasonal changes.
+
+
+
+Question:
+How can inventory shortage be prevented?
+
+
+Answer:
+Inventory shortage can be prevented using demand forecasting, safety stock calculation and optimized reorder points.
+
+
+
+Question:
+Which customers are valuable?
+
+
+Answer:
+High value customers are identified using purchasing frequency, spending amount and customer lifetime value.
+
+
+
+Question:
+What is the biggest business risk?
+
+
+Answer:
+Business risk depends on current conditions including revenue decline, inventory problems and customer churn.

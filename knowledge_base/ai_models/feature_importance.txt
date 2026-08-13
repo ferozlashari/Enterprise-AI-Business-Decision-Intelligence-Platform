@@ -1,0 +1,63 @@
+AI Feature Importance
+
+
+Sales Prediction Important Features:
+
+
+1. Product Category
+
+Impact:
+High
+
+
+2. Customer Segment
+
+Impact:
+High
+
+
+3. Region
+
+Impact:
+Medium
+
+
+4. Discount
+
+Impact:
+Medium
+
+
+5. Quantity
+
+Impact:
+High
+
+
+
+
+Inventory Prediction Features:
+
+
+1. Historical Demand
+
+2. Quantity Sold
+
+3. Product Category
+
+4. Supplier Lead Time
+
+5. Stock Level
+
+
+
+Customer Segmentation Features:
+
+
+1. Total Spending
+
+2. Purchase Frequency
+
+3. Customer Lifetime Value
+
+

@@ -1,0 +1,499 @@
+{
+    "status": "success",
+    "available": true,
+    "model": "Facebook Prophet",
+    "historical_end_date": "2017-12-01",
+    "forecast_start_date": "2018-01-01",
+    "forecast_end_date": "2018-12-01",
+    "forecast": [
+        {
+            "date": "2014-01-01",
+            "forecast": 20699.69,
+            "actual": 14236.9,
+            "lower": 11627.74,
+            "upper": 31314.77,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-02-01",
+            "forecast": 11147.66,
+            "actual": 4519.89,
+            "lower": 1063.77,
+            "upper": 20954.49,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-03-01",
+            "forecast": 40540.03,
+            "actual": 55691.01,
+            "lower": 30217.75,
+            "upper": 50190.73,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-04-01",
+            "forecast": 28107.11,
+            "actual": 28295.35,
+            "lower": 18009.3,
+            "upper": 37981.04,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-05-01",
+            "forecast": 28065.36,
+            "actual": 23648.29,
+            "lower": 18031.63,
+            "upper": 37440.41,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-06-01",
+            "forecast": 29413.44,
+            "actual": 34595.13,
+            "lower": 19276.67,
+            "upper": 39680.1,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-07-01",
+            "forecast": 29216.36,
+            "actual": 33946.39,
+            "lower": 19894.92,
+            "upper": 39316.18,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-08-01",
+            "forecast": 33963.98,
+            "actual": 27909.47,
+            "lower": 24319.49,
+            "upper": 43505.99,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-09-01",
+            "forecast": 62829.08,
+            "actual": 81777.35,
+            "lower": 52974.76,
+            "upper": 72790.0,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-10-01",
+            "forecast": 37236.55,
+            "actual": 31453.39,
+            "lower": 27567.3,
+            "upper": 46689.08,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-11-01",
+            "forecast": 72655.86,
+            "actual": 78628.72,
+            "lower": 63140.01,
+            "upper": 82552.01,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2014-12-01",
+            "forecast": 64616.05,
+            "actual": 69545.62,
+            "lower": 54887.07,
+            "upper": 74029.34,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-01-01",
+            "forecast": 20210.32,
+            "actual": 18174.08,
+            "lower": 10922.02,
+            "upper": 29860.81,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-02-01",
+            "forecast": 16024.45,
+            "actual": 11951.41,
+            "lower": 5787.13,
+            "upper": 25266.31,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-03-01",
+            "forecast": 49698.01,
+            "actual": 38726.25,
+            "lower": 40165.64,
+            "upper": 59627.22,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-04-01",
+            "forecast": 35170.81,
+            "actual": 34195.21,
+            "lower": 25426.99,
+            "upper": 45080.58,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-05-01",
+            "forecast": 28066.81,
+            "actual": 30131.69,
+            "lower": 18834.44,
+            "upper": 38535.72,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-06-01",
+            "forecast": 33019.55,
+            "actual": 24797.29,
+            "lower": 22715.87,
+            "upper": 42596.5,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-07-01",
+            "forecast": 34626.18,
+            "actual": 28765.33,
+            "lower": 24972.49,
+            "upper": 45069.53,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-08-01",
+            "forecast": 42732.49,
+            "actual": 36898.33,
+            "lower": 33081.3,
+            "upper": 53147.12,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-09-01",
+            "forecast": 77384.89,
+            "actual": 64595.92,
+            "lower": 68252.96,
+            "upper": 87042.03,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-10-01",
+            "forecast": 36514.51,
+            "actual": 31404.92,
+            "lower": 26525.45,
+            "upper": 45920.54,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-11-01",
+            "forecast": 87917.49,
+            "actual": 75972.56,
+            "lower": 77602.23,
+            "upper": 97202.82,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2015-12-01",
+            "forecast": 74686.33,
+            "actual": 74919.52,
+            "lower": 64361.24,
+            "upper": 84525.33,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-01-01",
+            "forecast": 18428.85,
+            "actual": 18542.49,
+            "lower": 7926.0,
+            "upper": 27271.1,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-02-01",
+            "forecast": 21935.17,
+            "actual": 22978.82,
+            "lower": 11809.82,
+            "upper": 32036.44,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-03-01",
+            "forecast": 51246.93,
+            "actual": 51715.88,
+            "lower": 40528.4,
+            "upper": 61100.3,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-04-01",
+            "forecast": 33263.21,
+            "actual": 38750.04,
+            "lower": 24134.7,
+            "upper": 43356.4,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-05-01",
+            "forecast": 49384.17,
+            "actual": 56987.73,
+            "lower": 39786.41,
+            "upper": 59335.79,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-06-01",
+            "forecast": 43587.51,
+            "actual": 40344.53,
+            "lower": 33818.77,
+            "upper": 53016.44,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-07-01",
+            "forecast": 38864.99,
+            "actual": 39261.96,
+            "lower": 29121.84,
+            "upper": 48790.38,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-08-01",
+            "forecast": 38909.53,
+            "actual": 31115.37,
+            "lower": 29341.52,
+            "upper": 48785.12,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-09-01",
+            "forecast": 74438.99,
+            "actual": 73410.02,
+            "lower": 64257.92,
+            "upper": 84037.93,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-10-01",
+            "forecast": 65404.25,
+            "actual": 59687.75,
+            "lower": 55374.71,
+            "upper": 75353.15,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-11-01",
+            "forecast": 89068.55,
+            "actual": 79411.97,
+            "lower": 79247.17,
+            "upper": 98785.97,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2016-12-01",
+            "forecast": 86299.5,
+            "actual": 96999.04,
+            "lower": 76317.61,
+            "upper": 95575.86,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-01-01",
+            "forecast": 38422.84,
+            "actual": 43971.37,
+            "lower": 28636.86,
+            "upper": 48697.68,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-02-01",
+            "forecast": 13866.57,
+            "actual": 20301.13,
+            "lower": 4490.62,
+            "upper": 22844.94,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-03-01",
+            "forecast": 60722.01,
+            "actual": 58872.35,
+            "lower": 51136.54,
+            "upper": 70959.97,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-04-01",
+            "forecast": 40728.48,
+            "actual": 36521.54,
+            "lower": 30812.5,
+            "upper": 50511.18,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-05-01",
+            "forecast": 49678.36,
+            "actual": 44261.11,
+            "lower": 39268.63,
+            "upper": 58806.43,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-06-01",
+            "forecast": 47196.9,
+            "actual": 52981.73,
+            "lower": 37361.57,
+            "upper": 56368.06,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-07-01",
+            "forecast": 44223.41,
+            "actual": 45264.42,
+            "lower": 33531.22,
+            "upper": 53206.95,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-08-01",
+            "forecast": 47754.37,
+            "actual": 63120.89,
+            "lower": 38480.04,
+            "upper": 57489.07,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-09-01",
+            "forecast": 89608.2,
+            "actual": 87866.65,
+            "lower": 80100.15,
+            "upper": 99366.85,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-10-01",
+            "forecast": 64926.53,
+            "actual": 77776.92,
+            "lower": 54973.05,
+            "upper": 74776.29,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-11-01",
+            "forecast": 104592.24,
+            "actual": 118447.82,
+            "lower": 94984.84,
+            "upper": 114731.12,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2017-12-01",
+            "forecast": 96831.95,
+            "actual": 83829.32,
+            "lower": 86785.19,
+            "upper": 105766.79,
+            "forecast_type": "historical"
+        },
+        {
+            "date": "2018-01-01",
+            "forecast": 36566.75,
+            "actual": null,
+            "lower": 26379.71,
+            "upper": 47081.93,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-02-01",
+            "forecast": 19564.28,
+            "actual": null,
+            "lower": 10364.22,
+            "upper": 30075.45,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-03-01",
+            "forecast": 70738.68,
+            "actual": null,
+            "lower": 60777.59,
+            "upper": 79978.49,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-04-01",
+            "forecast": 48739.12,
+            "actual": null,
+            "lower": 39102.45,
+            "upper": 58754.82,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-05-01",
+            "forecast": 48380.52,
+            "actual": null,
+            "lower": 39062.16,
+            "upper": 58671.79,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-06-01",
+            "forecast": 50403.49,
+            "actual": null,
+            "lower": 40552.81,
+            "upper": 60531.17,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-07-01",
+            "forecast": 49784.83,
+            "actual": null,
+            "lower": 39729.22,
+            "upper": 59460.12,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-08-01",
+            "forecast": 57546.88,
+            "actual": null,
+            "lower": 48231.87,
+            "upper": 67635.91,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-09-01",
+            "forecast": 105865.09,
+            "actual": null,
+            "lower": 96403.67,
+            "upper": 115670.86,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-10-01",
+            "forecast": 62413.74,
+            "actual": null,
+            "lower": 52477.86,
+            "upper": 72052.18,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-11-01",
+            "forecast": 121136.75,
+            "actual": null,
+            "lower": 111698.05,
+            "upper": 130671.5,
+            "forecast_type": "future"
+        },
+        {
+            "date": "2018-12-01",
+            "forecast": 107192.19,
+            "actual": null,
+            "lower": 97549.28,
+            "upper": 116814.01,
+            "forecast_type": "future"
+        }
+    ],
+    "records": 60,
+    "forecast_points": 12,
+    "historical_points": 48,
+    "future_points": 12,
+    "average_forecast": 64861.03,
+    "latest_forecast": 107192.19,
+    "minimum_forecast": 19564.28,
+    "maximum_forecast": 121136.75,
+    "growth": 193.14
+}

@@ -1,0 +1,24 @@
+AI Risk Management Policy
+
+
+AI recommendations should support human decision making.
+
+
+The system must:
+
+- Use reliable business data
+- Explain predictions
+- Monitor model performance
+- Detect unusual patterns
+
+
+
+AI limitations:
+
+Predictions depend on available historical data.
+
+External events may affect results.
+
+Business managers should validate important decisions.
+
+

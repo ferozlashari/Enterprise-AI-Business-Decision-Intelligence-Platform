@@ -1,0 +1,57 @@
+Enterprise KPI Definitions
+
+
+Sales KPIs:
+
+
+Revenue:
+
+Total sales income.
+
+
+Profit:
+
+Revenue minus operational cost.
+
+
+Profit Margin:
+
+Profit percentage compared with revenue.
+
+
+Growth Rate:
+
+Business improvement percentage.
+
+
+
+Inventory KPIs:
+
+
+Inventory Demand:
+
+Expected product requirement.
+
+
+Safety Stock:
+
+Extra inventory protection.
+
+
+Reorder Point:
+
+Required stock level for new order.
+
+
+
+Customer KPIs:
+
+
+Customer Lifetime Value:
+
+Expected customer revenue contribution.
+
+
+Customer Segment:
+
+Group of customers with similar behavior.

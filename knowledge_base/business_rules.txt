@@ -1,0 +1,13 @@
+Enterprise AI Business Intelligence Platform.
+
+The company operates multiple stores and warehouses.
+
+Sales analysis uses historical sales data.
+
+Inventory decisions depend on demand forecasting,
+safety stock, reorder points, and customer demand.
+
+High-value customers should receive priority service.
+
+The AI Copilot provides executive recommendations
+based on sales, inventory, and customer analytics.

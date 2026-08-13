@@ -1,0 +1,26 @@
+Enterprise AI Business Decision Intelligence Platform
+
+The platform provides artificial intelligence based business intelligence solutions for enterprise organizations.
+
+The system analyzes sales, inventory, customers and operational data to generate predictions, recommendations and executive decisions.
+
+Core capabilities:
+
+1. Sales Prediction
+2. Demand Forecasting
+3. Inventory Optimization
+4. Customer Segmentation
+5. AI Business Copilot
+6. Executive Decision Support
+
+
+The platform architecture includes:
+
+- Machine Learning Models
+- LangGraph Multi-Agent System
+- Retrieval Augmented Generation
+- FAISS Vector Database
+- Groq Large Language Model
+
+
+The objective is to help business leaders make data driven decisions.

@@ -1,0 +1,21 @@
+feature,importance
+categorical__Product ID_TEC-CO-10004722,0.2710213412003169
+numeric__Discount Amount,0.2556157948919577
+numeric__Discount,0.04606225950732024
+categorical__Product ID_TEC-MA-10001127,0.0447377710113179
+categorical__Product ID_OFF-BI-10001120,0.033208778859659574
+categorical__Product ID_OFF-BI-10000545,0.03295690754348436
+numeric__Quantity,0.029515452861643948
+categorical__Product ID_OFF-SU-10000151,0.025821337281637928
+categorical__Category_Office Supplies,0.017639505650988516
+categorical__Sub-Category_Copiers,0.013516884560852519
+categorical__Product ID_OFF-SU-10002881,0.01158868642503921
+categorical__Product ID_OFF-BI-10004995,0.010685606270393005
+categorical__Sub-Category_Furnishings,0.009927815046417805
+categorical__Sub-Category_Tables,0.008126279923491181
+categorical__Product ID_TEC-MA-10001047,0.008074057603203602
+categorical__Product ID_TEC-MA-10003979,0.007948134274309477
+categorical__Product ID_OFF-BI-10003527,0.007352591675228799
+categorical__Product ID_TEC-MA-10000045,0.006917024336761514
+categorical__Sub-Category_Storage,0.006725739350851542
+categorical__Product ID_TEC-CO-10001449,0.005946822613307787

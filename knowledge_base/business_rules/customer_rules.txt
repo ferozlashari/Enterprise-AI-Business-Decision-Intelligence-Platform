@@ -1,0 +1,58 @@
+Customer Intelligence Rules
+
+
+Customer analysis identifies customer behavior patterns.
+
+
+Customer Segmentation:
+
+
+High Value Customers:
+
+Customers with:
+
+- High spending
+- Frequent purchases
+- Strong engagement
+
+
+Regular Customers:
+
+Customers with stable purchasing behavior.
+
+
+Low Value Customers:
+
+Customers with limited purchases.
+
+
+Churn Risk Customers:
+
+Customers showing:
+
+- Reduced activity
+- Lower spending
+- Long inactivity period
+
+
+Recommended Actions:
+
+
+High Value:
+
+Provide loyalty programs.
+
+
+Regular:
+
+Increase engagement.
+
+
+Low Value:
+
+Provide targeted offers.
+
+
+Churn Risk:
+
+Launch retention campaigns.
