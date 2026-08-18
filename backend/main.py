@@ -42,7 +42,9 @@ from fastapi.middleware.cors import CORSMiddleware
 #
 # =========================================================
 
-from backend.database import models  # noqa: F401
+from backend.database import models  # noqa: F401
+
+
 
 from config.settings import settings
 
@@ -56,7 +58,7 @@ from config.settings import settings
 # ---------------------------------------------------------
 
 from backend.auth.auth_router import (
-    router as auth_router,
+    router as auth_router,
 )
 
 
@@ -65,19 +67,19 @@ from backend.auth.auth_router import (
 # ---------------------------------------------------------
 
 from backend.api.sales_api import (
-    router as sales_router,
+    router as sales_router,
 )
 
 from backend.api.inventory_api import (
-    router as inventory_router,
+    router as inventory_router,
 )
 
 from backend.api.forecast_api import (
-    router as forecast_router,
+    router as forecast_router,
 )
 
 from backend.api.customer_api import (
-    router as customer_router,
+    router as customer_router,
 )
 
 
@@ -86,11 +88,11 @@ from backend.api.customer_api import (
 # ---------------------------------------------------------
 
 from backend.api.dashboard_api import (
-    router as dashboard_router,
+    router as dashboard_router,
 )
 
 from backend.api.reports_api import (
-    router as reports_router,
+    router as reports_router,
 )
 
 
@@ -99,11 +101,11 @@ from backend.api.reports_api import (
 # ---------------------------------------------------------
 
 from backend.api.decision_api import (
-    router as decision_router,
+    router as decision_router,
 )
 
 from backend.api.recommendation_api import (
-    router as recommendation_router,
+    router as recommendation_router,
 )
 
 
@@ -112,11 +114,11 @@ from backend.api.recommendation_api import (
 # ---------------------------------------------------------
 
 from backend.api.copilot_api import (
-    router as copilot_router,
+    router as copilot_router,
 )
 
 from backend.api.multi_agent_api import (
-    router as multi_agent_router,
+    router as multi_agent_router,
 )
 
 
@@ -125,7 +127,7 @@ from backend.api.multi_agent_api import (
 # ---------------------------------------------------------
 
 from backend.api.alert_api import (
-    router as alert_router,
+    router as alert_router,
 )
 
 
@@ -134,11 +136,11 @@ from backend.api.alert_api import (
 # ---------------------------------------------------------
 
 from backend.api.cache_api import (
-    router as cache_router,
+    router as cache_router,
 )
 
 from backend.api.task_api import (
-    router as task_router,
+    router as task_router,
 )
 
 
@@ -147,7 +149,7 @@ from backend.api.task_api import (
 # =========================================================
 
 from backend.monitoring.monitor_api import (
-    router as monitor_router,
+    router as monitor_router,
 )
 
 
@@ -157,45 +159,45 @@ from backend.monitoring.monitor_api import (
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    Application startup/shutdown lifecycle.
-    """
+    """
+    Application startup/shutdown lifecycle.
+    """
 
-    # =====================================================
-    # STARTUP
-    # =====================================================
+    # =====================================================
+    # STARTUP
+    # =====================================================
 
-    print()
-    print("=" * 70)
-    print("Enterprise AI Platform Starting...")
-    print("=" * 70)
+    print()
+    print("=" * 70)
+    print("Enterprise AI Platform Starting...")
+    print("=" * 70)
 
-    print("Database       : PostgreSQL")
-    print("ORM            : SQLAlchemy 2.x")
-    print("Migrations     : Alembic")
-    print("Decision Engine: Enabled")
-    print("AI Services    : Enabled")
-    print("RAG / Copilot  : Enabled")
-    print("Multi-Agent    : Enabled")
-    print("Alerts         : Enabled")
-    print("Monitoring     : Enabled")
-    print("Authentication : Enabled")
+    print("Database       : PostgreSQL")
+    print("ORM            : SQLAlchemy 2.x")
+    print("Migrations     : Alembic")
+    print("Decision Engine: Enabled")
+    print("AI Services    : Enabled")
+    print("RAG / Copilot  : Enabled")
+    print("Multi-Agent    : Enabled")
+    print("Alerts         : Enabled")
+    print("Monitoring     : Enabled")
+    print("Authentication : Enabled")
 
-    print("=" * 70)
-    print()
+    print("=" * 70)
+    print()
 
-    # Application is now ready
-    yield
+    # Application is now ready
+    yield
 
-    # =====================================================
-    # SHUTDOWN
-    # =====================================================
+    # =====================================================
+    # SHUTDOWN
+    # =====================================================
 
-    print()
-    print("=" * 70)
-    print("Enterprise AI Platform Shutting Down...")
-    print("=" * 70)
-    print()
+    print()
+    print("=" * 70)
+    print("Enterprise AI Platform Shutting Down...")
+    print("=" * 70)
+    print()
 
 
 # =========================================================
@@ -203,29 +205,29 @@ async def lifespan(app: FastAPI):
 # =========================================================
 
 app = FastAPI(
-    title=(
-        "Enterprise AI Business "
-        "Decision Intelligence Platform"
-    ),
-    version="1.0.0",
-    description=(
-        "Enterprise AI platform for:\n\n"
-        "- Sales Prediction\n"
-        "- Demand Forecasting\n"
-        "- Inventory Intelligence\n"
-        "- Customer Segmentation\n"
-        "- Executive Decision Support\n"
-        "- AI Copilot\n"
-        "- Multi Agent Business Intelligence\n"
-        "- Decision Intelligence\n"
-        "- Business Risk Assessment\n"
-        "- Business Alerts\n"
-        "- Recommendation Engine\n"
-        "- Enterprise Reporting\n"
-        "- Knowledge Base / RAG\n"
-        "- AI Model Monitoring"
-    ),
-    lifespan=lifespan,
+    title=(
+        "Enterprise AI Business "
+        "Decision Intelligence Platform"
+    ),
+    version="1.0.0",
+    description=(
+        "Enterprise AI platform for:\n\n"
+        "- Sales Prediction\n"
+        "- Demand Forecasting\n"
+        "- Inventory Intelligence\n"
+        "- Customer Segmentation\n"
+        "- Executive Decision Support\n"
+        "- AI Copilot\n"
+        "- Multi Agent Business Intelligence\n"
+        "- Decision Intelligence\n"
+        "- Business Risk Assessment\n"
+        "- Business Alerts\n"
+        "- Recommendation Engine\n"
+        "- Enterprise Reporting\n"
+        "- Knowledge Base / RAG\n"
+        "- AI Model Monitoring"
+    ),
+    lifespan=lifespan,
 )
 
 
@@ -246,21 +248,21 @@ app = FastAPI(
 # =========================================================
 
 ALLOWED_ORIGINS = [
-    # Vite development server
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
+    # Vite development server
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 
-    # Vite production preview
-    "http://localhost:4173",
-    "http://127.0.0.1:4173",
+    # Vite production preview
+    "http://localhost:4173",
+    "http://127.0.0.1:4173",
 
-    # Dockerized nginx frontend (default compose mapping)
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    # Dockerized nginx frontend (default compose mapping)
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 
-    # Configured frontend URL (.env FRONTEND_URL — covers any
-    # deployment origin that isn't one of the defaults above)
-    settings.FRONTEND_URL,
+    # Configured frontend URL (.env FRONTEND_URL — covers any
+    # deployment origin that isn't one of the defaults above)
+    settings.FRONTEND_URL,
 ]
 
 # De-duplicate while preserving order.
@@ -268,19 +270,19 @@ ALLOWED_ORIGINS = list(dict.fromkeys(ALLOWED_ORIGINS))
 
 
 app.add_middleware(
-    CORSMiddleware,
+    CORSMiddleware,
 
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=ALLOWED_ORIGINS,
 
-    allow_credentials=True,
+    allow_credentials=True,
 
-    allow_methods=[
-        "*",
-    ],
+    allow_methods=[
+        "*",
+    ],
 
-    allow_headers=[
-        "*",
-    ],
+    allow_headers=[
+        "*",
+    ],
 )
 
 
@@ -290,55 +292,55 @@ app.add_middleware(
 
 routers = [
 
-    # -----------------------------------------------------
-    # Authentication
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # Authentication
+    # -----------------------------------------------------
 
-    auth_router,
+    auth_router,
 
-    # -----------------------------------------------------
-    # AI Prediction Modules
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # AI Prediction Modules
+    # -----------------------------------------------------
 
-    sales_router,
-    inventory_router,
-    forecast_router,
-    customer_router,
+    sales_router,
+    inventory_router,
+    forecast_router,
+    customer_router,
 
-    # -----------------------------------------------------
-    # Business Intelligence
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # Business Intelligence
+    # -----------------------------------------------------
 
-    dashboard_router,
-    reports_router,
+    dashboard_router,
+    reports_router,
 
-    # -----------------------------------------------------
-    # Decision Intelligence
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # Decision Intelligence
+    # -----------------------------------------------------
 
-    decision_router,
-    recommendation_router,
+    decision_router,
+    recommendation_router,
 
-    # -----------------------------------------------------
-    # AI / Copilot
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # AI / Copilot
+    # -----------------------------------------------------
 
-    copilot_router,
-    multi_agent_router,
+    copilot_router,
+    multi_agent_router,
 
-    # -----------------------------------------------------
-    # Alerts / Monitoring
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # Alerts / Monitoring
+    # -----------------------------------------------------
 
-    alert_router,
-    monitor_router,
+    alert_router,
+    monitor_router,
 
-    # -----------------------------------------------------
-    # Tasks / Cache
-    # -----------------------------------------------------
+    # -----------------------------------------------------
+    # Tasks / Cache
+    # -----------------------------------------------------
 
-    task_router,
-    cache_router,
+    task_router,
+    cache_router,
 ]
 
 
@@ -347,7 +349,7 @@ routers = [
 # =========================================================
 
 for router in routers:
-    app.include_router(router)
+    app.include_router(router)
 
 
 # =========================================================
@@ -355,65 +357,65 @@ for router in routers:
 # =========================================================
 
 @app.get(
-    "/",
-    tags=["System"],
+    "/",
+    tags=["System"],
 )
 def home():
-    """
-    Basic API information.
-    """
+    """
+    Basic API information.
+    """
 
-    return {
-        "application": (
-            "Enterprise AI Business "
-            "Decision Intelligence Platform"
-        ),
+    return {
+        "application": (
+            "Enterprise AI Business "
+            "Decision Intelligence Platform"
+        ),
 
-        "status": "Running",
+        "status": "Running",
 
-        "version": "1.0.0",
+        "version": "1.0.0",
 
-        "backend": "FastAPI",
+        "backend": "FastAPI",
 
-        "database": "PostgreSQL",
+        "database": "PostgreSQL",
 
-        "orm": "SQLAlchemy 2.x",
+        "orm": "SQLAlchemy 2.x",
 
-        "migration": "Alembic",
+        "migration": "Alembic",
 
-        "modules": {
+        "modules": {
 
-            "sales_prediction": True,
+            "sales_prediction": True,
 
-            "inventory_prediction": True,
+            "inventory_prediction": True,
 
-            "demand_forecasting": True,
+            "demand_forecasting": True,
 
-            "customer_segmentation": True,
+            "customer_segmentation": True,
 
-            "decision_engine": True,
+            "decision_engine": True,
 
-            "recommendation_engine": True,
+            "recommendation_engine": True,
 
-            "ai_copilot": True,
+            "ai_copilot": True,
 
-            "multi_agent": True,
+            "multi_agent": True,
 
-            "alerts": True,
+            "alerts": True,
 
-            "monitoring": True,
+            "monitoring": True,
 
-            "reports": True,
+            "reports": True,
 
-            "cache": True,
+            "cache": True,
 
-            "tasks": True,
+            "tasks": True,
 
-            "authentication": True,
+            "authentication": True,
 
-            "rag": True,
-        },
-    }
+            "rag": True,
+        },
+    }
 
 
 # =========================================================
@@ -421,61 +423,61 @@ def home():
 # =========================================================
 
 @app.get(
-    "/health",
-    tags=["System"],
+    "/health",
+    tags=["System"],
 )
 def health():
-    """
-    Application health endpoint.
-    """
+    """
+    Application health endpoint.
+    """
 
-    return {
-        "status": "Healthy",
+    return {
+        "status": "Healthy",
 
-        "application": (
-            "Enterprise AI Business "
-            "Decision Intelligence Platform"
-        ),
+        "application": (
+            "Enterprise AI Business "
+            "Decision Intelligence Platform"
+        ),
 
-        "backend": "FastAPI",
+        "backend": "FastAPI",
 
-        "database": "PostgreSQL",
+        "database": "PostgreSQL",
 
-        "orm": "SQLAlchemy 2.x",
+        "orm": "SQLAlchemy 2.x",
 
-        "migration": "Alembic",
+        "migration": "Alembic",
 
-        "services": {
+        "services": {
 
-            "sales": "Available",
+            "sales": "Available",
 
-            "inventory": "Available",
+            "inventory": "Available",
 
-            "forecast": "Available",
+            "forecast": "Available",
 
-            "customer": "Available",
+            "customer": "Available",
 
-            "decision_engine": "Available",
+            "decision_engine": "Available",
 
-            "recommendation_engine": "Available",
+            "recommendation_engine": "Available",
 
-            "copilot": "Available",
+            "copilot": "Available",
 
-            "multi_agent": "Available",
+            "multi_agent": "Available",
 
-            "alerts": "Available",
+            "alerts": "Available",
 
-            "monitoring": "Available",
+            "monitoring": "Available",
 
-            "reports": "Available",
+            "reports": "Available",
 
-            "cache": "Available",
+            "cache": "Available",
 
-            "tasks": "Available",
+            "tasks": "Available",
 
-            "authentication": "Available",
-        },
-    }
+            "authentication": "Available",
+        },
+    }
 
 
 # =========================================================
@@ -483,63 +485,63 @@ def health():
 # =========================================================
 
 @app.get(
-    "/api/info",
-    tags=["System"],
+    "/api/info",
+    tags=["System"],
 )
 def api_info():
-    """
-    Returns registered API modules.
-    """
+    """
+    Returns registered API modules.
+    """
 
-    return {
-        "name": (
-            "Enterprise AI Business "
-            "Decision Intelligence Platform"
-        ),
+    return {
+        "name": (
+            "Enterprise AI Business "
+            "Decision Intelligence Platform"
+        ),
 
-        "version": "1.0.0",
+        "version": "1.0.0",
 
-        "api": "FastAPI",
+        "api": "FastAPI",
 
-        "documentation": {
-            "swagger": "/docs",
-            "redoc": "/redoc",
-            "openapi": "/openapi.json",
-        },
+        "documentation": {
+            "swagger": "/docs",
+            "redoc": "/redoc",
+            "openapi": "/openapi.json",
+        },
 
-        "routers": [
+        "routers": [
 
-            "authentication",
+            "authentication",
 
-            "sales",
+            "sales",
 
-            "inventory",
+            "inventory",
 
-            "forecast",
+            "forecast",
 
-            "customer",
+            "customer",
 
-            "dashboard",
+            "dashboard",
 
-            "reports",
+            "reports",
 
-            "decision",
+            "decision",
 
-            "recommendation",
+            "recommendation",
 
-            "copilot",
+            "copilot",
 
-            "multi_agent",
+            "multi_agent",
 
-            "alerts",
+            "alerts",
 
-            "monitoring",
+            "monitoring",
 
-            "tasks",
+            "tasks",
 
-            "cache",
-        ],
-    }
+            "cache",
+        ],
+    }
 
 
 # =========================================================
@@ -564,15 +566,14 @@ def api_info():
 
 if __name__ == "__main__":
 
-    import uvicorn
+    import uvicorn
 
-    uvicorn.run(
-        "backend.main:app",
+    uvicorn.run(
+        "backend.main:app",
 
-        host="127.0.0.1",
+        host="127.0.0.1",
 
-        port=8000,
+        port=8000,
 
-        reload=True,
-    )
-
+        reload=True,
+    )
