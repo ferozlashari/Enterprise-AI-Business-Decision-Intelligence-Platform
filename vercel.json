@@ -1,14 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "backend/main.py",
-      "use": "@vercel/python"
+  "functions": {
+    "*.py": {
+      "excludeFiles": "{vector_db,uploads,reports,outputs,saved_models,datasets,logs}/**"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "backend/main.py"
-    }
-  ]
+  }
 }
