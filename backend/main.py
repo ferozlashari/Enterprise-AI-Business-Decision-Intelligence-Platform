@@ -44,6 +44,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.database import models  # noqa: F401
 
+import sys
+from pathlib import Path
+
+# Ensure the project root directory is in sys.path for Vercel serverless execution
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 from config.settings import settings
 
 
